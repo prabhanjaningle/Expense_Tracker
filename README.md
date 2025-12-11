@@ -1,32 +1,56 @@
 Expense Tracker Dashboard
 
-Track your expenses, visualize spending, and stay on budget with this modern web-based dashboard.
+A modern web-based dashboard to track expenses, categorize spending, and visualize trends.
 
-💡 Features
+✅ Features
 
 Add, Edit & Delete Expenses
 
-Categorize Expenses: Food, Transport, Bills, Shopping, Entertainment, Other
+Categorize Expenses:
 
-Filter by Month to view monthly or all-time expenses
+Food
 
-Real-Time Summary: Total spent, monthly total, and transaction count
+Transport
 
-Interactive Charts with Chart.js:
+Bills
 
-Pie chart for spending by category
+Shopping
 
-Bar chart for last 6 months’ totals
+Entertainment
 
-Persistent Storage using localStorage
+Other
 
-Fancy UI: Glassmorphism cards, gradient buttons, category-colored items, hover animations
+Filter Expenses by Month or view all-time expenses
+
+Real-Time Summary:
+
+Total spent
+
+Monthly total
+
+Number of transactions
+
+Interactive Charts using Chart.js:
+
+Pie chart: Spending by category
+
+Bar chart: Monthly totals (last 6 months)
+
+Persistent Storage with localStorage
+
+Modern UI:
+
+Glassmorphism cards
+
+Gradient buttons
+
+Hover effects for interactivity
 
 Responsive Design for desktop and mobile
 
 🚀 Demo
 
-Open index.html in your browser to try it locally.
+Open index.html in any modern browser.
 
 🛠 Installation
 
@@ -37,51 +61,39 @@ git clone https://github.com/your-username/expense-tracker-dashboard.git
 
 Open the project:
 
-Open index.html in a modern web browser.
+Open index.html in a browser.
 
 📂 File Structure
 expense-tracker-dashboard/
-│
-├─ index.html          # Main HTML file
-├─ style.css           # Styles and fancy UI
-├─ script.js           # JavaScript logic & charts
-└─ README.md
+├─ index.html      # Main HTML file
+├─ style.css       # Styling & UI
+├─ script.js       # JavaScript logic & charts
+└─ README.md       # Project documentation
 
 ⚡ How It Works
 
 Fill out the expense form and click Save Expense.
 
-Expenses appear in the Expenses List.
+Expenses appear in the list, with Edit and Delete options.
 
-Use the month filter to check monthly spending.
+Use the month filter to view specific months.
 
-Charts update automatically to visualize spending by category and month.
+Charts update automatically to visualize spending trends.
 
-Data is stored in localStorage, so it persists across sessions.
+All data is stored in localStorage, so it persists across browser sessions.
 
-Use Clear All to reset all expenses.
+Click Clear All to reset all expenses.
 
-🖌️ Technologies Used
+🖌 Technologies Used
 
 HTML5 & CSS3
 
 Vanilla JavaScript
 
-Chart.js for interactive charts
+Chart.js (for interactive charts)
 
-LocalStorage for data persistence
-
-🌟 Future Improvements
-
-Dark/light mode toggle
-
-Export expenses to CSV
-
-Category icons and animations
-
-Mobile-first enhancements
+LocalStorage (for persistent data)
 
 👤 Author
 
 Prabhanjan Ingle
-Portfolio & GitHub-ready web project
