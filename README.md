@@ -4,49 +4,49 @@ A modern web-based dashboard to track expenses, categorize spending, and visuali
 
 ✅ Features
 
-Add, Edit & Delete Expenses
+-> Add, Edit & Delete Expenses
 
-Categorize Expenses:
+-> Categorize Expenses:
 
-Food
+-> Food
 
-Transport
+-> Transport
 
-Bills
+-> Bills
 
-Shopping
+-> Shopping
 
-Entertainment
+-> Entertainment
 
-Other
+-> Other
 
-Filter Expenses by Month or view all-time expenses
+-> Filter Expenses by Month or view all-time expenses
 
-Real-Time Summary:
+-> Real-Time Summary:
 
-Total spent
+-> Total spent
 
-Monthly total
+-> Monthly total
 
-Number of transactions
+-> Number of transactions
 
-Interactive Charts using Chart.js:
+-> Interactive Charts using Chart.js:
 
-Pie chart: Spending by category
+-> Pie chart: Spending by category
 
-Bar chart: Monthly totals (last 6 months)
+-> Bar chart: Monthly totals (last 6 months)
 
-Persistent Storage with localStorage
+-> Persistent Storage with localStorage
 
-Modern UI:
+-> Modern UI:
 
-Glassmorphism cards
+-> Glassmorphism cards
 
-Gradient buttons
+-> Gradient buttons
 
-Hover effects for interactivity
+-> Hover effects for interactivity
 
-Responsive Design for desktop and mobile
+-> Responsive Design for desktop and mobile
 
 🚀 Demo
 
