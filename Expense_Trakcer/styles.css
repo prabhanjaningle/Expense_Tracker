@@ -1,0 +1,152 @@
+:root{
+  --bg: #0f1724;
+  --card: rgba(15,23,36,0.6);
+  --muted: #94a3b8;
+  --accent: #06b6d4;
+  --white: #ffffff;
+}
+
+/* Global */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+body{
+  background: linear-gradient(180deg,#071028 0%, #071730 100%);
+  color:var(--white);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Top bar */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 24px;
+  gap:16px;
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.brand h1{
+  margin:0;font-size:24px;
+  background: linear-gradient(90deg,#06b6d4,#3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.brand .subtitle{margin:2px 0 0;font-size:12px;color:var(--muted)}
+.controls{display:flex;gap:8px;align-items:center}
+.controls select, .controls button{
+  padding:8px 10px;
+  border-radius:12px;
+  border:0;
+  background: rgba(255,255,255,0.04);
+  color:var(--white);
+  cursor:pointer;
+}
+.controls button{
+  background: linear-gradient(90deg,#06b6d4,#3b82f6);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.controls button:hover{transform:scale(1.05); box-shadow:0 6px 15px rgba(3,105,161,0.4)}
+
+/* Layout */
+.container{
+  display:grid;
+  grid-template-columns: 1fr 380px;
+  gap:20px;
+  padding:20px;
+  max-width:1200px;
+  margin:20px auto;
+}
+.card{
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:20px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.6);
+}
+
+/* Form */
+.form-card h2{margin-top:0}
+.row{display:flex;flex-direction:column;margin-bottom:10px}
+.row label{font-size:12px;color:var(--muted);margin-bottom:6px}
+.row input, .row select{
+  padding:10px;
+  border-radius:12px;
+  border:0;
+  background:rgba(255,255,255,0.03);
+  color:var(--white);
+  outline:none;
+  transition: all 0.2s;
+}
+.row input:focus, .row select:focus{
+  border:1px solid var(--accent);
+  box-shadow:0 0 8px rgba(6,182,212,0.4);
+}
+.row.actions{display:flex;gap:8px;align-items:center}
+.row.actions button{
+  padding:10px 12px;
+  border-radius:12px;
+  border:0;
+  background: linear-gradient(90deg,#06b6d4,#3b82f6);
+  color:white;
+  cursor:pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.row.actions button:hover{
+  transform: scale(1.05);
+  box-shadow:0 6px 15px rgba(3,105,161,0.4);
+}
+#resetBtn{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.04);
+  color:var(--white);
+}
+
+/* List */
+.list-card h2{margin-top:0}
+.expenses-list{max-height:380px;overflow:auto;padding-top:8px}
+.expense-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px;
+  border-radius:12px;
+  margin-bottom:8px;
+  background: rgba(255,255,255,0.02);
+  border-left: 4px solid var(--accent);
+  transition: all 0.2s;
+}
+.expense-item:hover{
+  background: rgba(255,255,255,0.08);
+  transform: translateX(4px);
+}
+.expense-item[data-category="Food"] { border-color: #f97316; }
+.expense-item[data-category="Transport"] { border-color: #3b82f6; }
+.expense-item[data-category="Bills"] { border-color: #ef4444; }
+.expense-item[data-category="Shopping"] { border-color: #facc15; }
+.expense-item[data-category="Entertainment"] { border-color: #8b5cf6; }
+.expense-item[data-category="Other"] { border-color: #06b6d4; }
+
+/* Summary */
+.summary-grid{display:flex;gap:12px;flex-wrap:wrap}
+.summary-item{flex:1;min-width:110px;padding:12px;border-radius:12px;background:rgba(255,255,255,0.02);text-align:center}
+.summary-item h3{margin:0;font-size:13px;color:var(--muted)}
+.summary-item p{margin:8px 0 0;font-size:18px;font-weight:700}
+
+/* Charts */
+.chart-card{overflow:hidden}
+
+/* Footer */
+.footer{text-align:center;padding:12px;color:var(--muted);font-size:13px;text-shadow:0 0 5px rgba(6,182,212,0.5)}
+
+/* Responsive */
+@media(max-width:980px){
+  .container{grid-template-columns:1fr; padding:12px}
+  .right{order:2}
+  .left{order:1}
+}
